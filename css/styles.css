@@ -1,0 +1,96 @@
+/* ═══════════════════════════════════════════════════════════════ */
+/* IMPORTAR FUENTES DE GOOGLE FONTS */
+/* ═══════════════════════════════════════════════════════════════ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* ESTILOS PRINCIPALES - Topbar y Body */
+/* ═══════════════════════════════════════════════════════════════ */
+
+/* Topbar - Barra de navegación superior */
+topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(51, 49, 49, 0.1);
+}
+
+topbar img {
+    width: 50px;
+    height: auto;
+    position: left;
+    margin-left: 150px;
+}
+
+/* Body - Página principal */
+body {
+    padding-top: 80px;
+    margin: 0;
+    background-color: rgb(17, 16, 16);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Títulos h1 - Principal (Playfair Display para lujo) */
+h1 {
+    color: rgb(255, 255, 255);
+    position: center;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 40px 0 20px 0;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Párrafos - Textos generales (Inter para modernidad) */
+p {
+    color: rgb(200, 200, 200);
+    position: center;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    margin: 15px 0;
+}
+
+/* Imágenes generales */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+/* Títulos h2 - Secundarios (Poppins) */
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 30px 0 15px 0;
+}
+
+/* Títulos h3 - Terciarios (Poppins) */
+h3 {
+    color: rgb(220, 220, 220);
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}

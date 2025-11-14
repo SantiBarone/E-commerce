@@ -1,0 +1,115 @@
+/* ═══════════════════════════════════════════════════════════════ */
+/* CONTENEDORES DE PRODUCTOS - Grilla y detalles */
+/* ═══════════════════════════════════════════════════════════════ */
+
+/* Contenedor de productos (grilla) */
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cada producto individual */
+.producto {
+    background-color: rgb(30, 30, 30);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Imagen del producto */
+.producto-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Nombre del producto */
+.producto-nombre {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Precio del producto */
+.producto-precio {
+    color: rgb(200, 200, 200);
+    font-size: 16px;
+    margin: 10px 0 20px 0;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Contenedores de detalles de producto */
+product-detail, product-contain {
+    display: block;
+    background-color: rgb(30, 30, 30);
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+product-detail h1, product-contain h1 {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    margin: 0 0 20px 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+product-detail img, product-contain img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+product-detail p, product-contain p {
+    color: rgb(200, 200, 200);
+    font-size: 16px;
+    margin: 15px 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .productos-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        padding: 20px 10px;
+    }
+    
+    .producto {
+        padding: 15px;
+    }
+    
+    .producto-img {
+        height: 200px;
+    }
+    
+    .producto-nombre {
+        font-size: 14px;
+    }
+}

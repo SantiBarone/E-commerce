@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurogane - Registro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <topbar>
+        <img src="./img/logo caja.png" alt="Kurogane Logo">
+        <input button type="button" value="home" onclick="window.location.href='main-containt/index.html'">
+    </topbar>
+    <div>
+        <h1>Registrarse</h1>
+        <div class="form-container">
+            <input type="text" id="usuarioReg" placeholder="Usuario" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="contraseñaReg" placeholder="Contraseña" required>
+            <input type="password" id="confirmarContraseña" placeholder="Confirmar Contraseña" required>
+            <input type="button" value="Registrarse" onclick="handleRegister()">
+        </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
